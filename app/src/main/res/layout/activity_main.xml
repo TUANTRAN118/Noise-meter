@@ -1,0 +1,309 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#fff">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/back_news"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:id="@+id/top">
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:background="#B3B3B3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_toEndOf="@+id/line"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Noise Meter"
+                android:textColor="#000"
+                android:textSize="@dimen/_25sdp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal"
+                >
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    >
+
+
+
+                    <TextView
+                        android:id="@+id/DurationTimeRunning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/rubik_medium"
+                        android:text="@string/DurationTimeRunning"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/text_small" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lMin"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:text="@string/LMin_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/rubik_medium"
+                            />
+
+                        <TextView
+                            android:id="@+id/minTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/LMin"
+                            android:textSize="@dimen/text_medium"
+                            android:fontFamily="@font/rubik_medium"
+                            android:textColor="#000"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lMax"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:text="@string/LMax_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/rubik_medium"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/maxTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/LMax"
+                            android:fontFamily="@font/rubik_medium"
+
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="#000"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    >
+
+
+
+                    <LinearLayout
+                        android:id="@+id/LAeqTime"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/lAeqTimelabel"
+                            android:text="@string/LAeqTimeDisplay_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/lAeqTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/LAeqTimeDisplay"
+                            android:textSize="@dimen/text_medium"
+                            android:fontFamily="@font/rubik_medium"
+
+                            android:textColor="#000"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LAeq"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp"
+                        android:layout_marginLeft="0dp"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_gravity="center"
+                        android:background="@color/background">
+
+                        <TextView
+                            android:text="@string/LAeqRunning_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik_medium"
+
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/lAeqRunning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/LAeqRunning"
+                            android:fontFamily="@font/rubik_medium"
+
+                            android:textSize="@dimen/text_medium"
+                            android:textColor="#000"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/currentReading"
+                android:layout_width="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/level"
+                android:fontFamily="@font/rubik_medium"
+
+                android:textSize="@dimen/text_huge"
+                android:textColor="#000"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+
+            <com.app.noisepollution.ThirdOctaveGraph
+                android:id="@+id/thirdOctave"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

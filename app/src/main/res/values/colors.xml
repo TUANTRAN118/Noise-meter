@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#fff</color>
+    <color name="background_border">#A4A4A4</color>
+    <color name="text">#6E6E6E</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#000000</color>
+    <color name="aaa">#252525</color>
+    <color name="twitter">#38A1F3</color>
+    <color name="offwhite">#e7eaed</color>
+    <color name="red2">#FF3232</color>
+    <color name="green2">#8BC34A</color>
+    <color name="blue2">#8BC34A</color>
+    <color name="ff45">#DADADA</color>
+
+    <color name="purple_200">#2196F3</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#2196F3</color>
+    <color name="teal_700">#2196F3</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#D6211F</color>
+    <color name="yellow">#FF9800</color>
+    <color name="green">#3E8E41</color>
+</resources>

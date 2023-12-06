@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".SplashActivity">
+
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/noice_logo"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:id="@+id/im"
+        android:layout_centerVertical="true"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Noise Meter"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:layout_below="@+id/im"
+        android:textSize="@dimen/_25sdp" />
+
+
+
+
+</RelativeLayout>
